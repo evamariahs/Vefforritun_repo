@@ -193,11 +193,11 @@ app.delete(apiPath + version + '/genres/:genresId', (req, res) => {
     }
     res.status(404).json({ 'message': "Genre with id:  " + req.params.genresId + " does not exist" });
 });
-
+/*
 app.use('*', (req, res) => {
     res.status(405).send('Operation not supported.');
 });
-
+*/
 //Start the server
 app.listen(port, () => {
     console.log('Tune app listening on port + ' + port);
