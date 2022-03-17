@@ -15,7 +15,7 @@ const { query } = require('express');
 const app = express();
 
 //Port environment variable already set up to run on Heroku
-let port = 3000;
+let port = process.env.PORT || 3000;
 
 //Tell express to use the body parser module
 app.use(bodyParser.json());
